@@ -21,8 +21,8 @@ document.querySelector('.btn#left').addEventListener('click', () => {
         const img = data.images[0].url;
         const imgElement = document.createElement('img');
         imgElement.src = img;
-        imgs.querySelector('.left-img').innerHTML = '';
-        imgs.querySelector('.left-img').appendChild(imgElement);
+        imgs.querySelector('.right-img').innerHTML = '';
+        imgs.querySelector('.right-img').appendChild(imgElement);
     });
 });
 document.querySelector('.btn#right').addEventListener('click', () => {
@@ -30,8 +30,8 @@ document.querySelector('.btn#right').addEventListener('click', () => {
         const img = data.images[0].url;
         const imgElement = document.createElement('img');
         imgElement.src = img;
-        imgs.querySelector('.right-img').innerHTML = '';
-        imgs.querySelector('.right-img').appendChild(imgElement);
+        imgs.querySelector('.left-img').innerHTML = '';
+        imgs.querySelector('.left-img').appendChild(imgElement);
     });
 });
 
