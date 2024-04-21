@@ -1,5 +1,9 @@
 console.log('oh daddy~~');
 
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+}
+
 const imgs = document.querySelector('.imgs');
 
 fetch('https://api.waifu.im/search').then(res => res.json()).then(data => {
@@ -36,3 +40,8 @@ document.querySelector('.btn#right').addEventListener('click', () => {
 });
 
 console.log('%cuwu~~', 'font-size: 4rem');
+
+document.querySelector('.change-theme').addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+});

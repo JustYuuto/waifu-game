@@ -8,6 +8,19 @@ body {
     /*font-family: 'Bookman Old Style', sans-serif;*/
 }
 
+body.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
 .imgs {
     display: flex;
     justify-content: center;
@@ -62,4 +75,10 @@ button {
 
 button:hover {
     background-color: #e0e0e0;
+}
+
+.change-theme {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
