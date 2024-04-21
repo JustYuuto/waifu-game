@@ -34,6 +34,18 @@ body {
     overflow: hidden;
 }
 
+@media (max-width: 850px) {
+    .imgs {
+        margin: 0 5%;
+    }
+}
+
+@media (max-width: 576px) {
+    .imgs {
+        margin: 0;
+    }
+}
+
 h1 {
     text-align: center;
     margin-top: 20px;
